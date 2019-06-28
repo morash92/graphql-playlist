@@ -4,9 +4,9 @@ const graphqlHTTP = require('express-graphql');
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
 
-const { db: { host, port, name, username, password } } = config;
+// const { db: { host, port, name, username, password } } = config;
 
-mongoose.connect(`mongodb://${username}:${password}@${host}:${port}/${name}`);
+mongoose.connect(`mongodb://mo:test123@ds261116.mlab.com:61116/gql-ninja`);
 mongoose.connection.once('open', () => {
     console.log('connected to database');
 });

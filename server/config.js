@@ -1,5 +1,5 @@
 require('dotenv').config();
-console.log(process.env.DEV_DB_HOST)
+console.log(process.env.DEV_DB_HOST);
 
 const env = process.env.NODE_ENV;
 
